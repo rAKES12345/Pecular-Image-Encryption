@@ -1,0 +1,16 @@
+.share-image{
+    display: inline-block;
+    max-width: 900px;
+}
+.left-side,.right-side{
+    display: inline-block;
+    min-width: 300px !important;
+}
+.left-side>.card,.right-side>.card{
+    height: 80vh !important;
+    width: 400px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+textarea{
+    resize: none !important;
+}

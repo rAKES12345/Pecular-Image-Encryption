@@ -1,0 +1,12 @@
+.card{
+    width: 25rem;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card>img{
+    margin-top: 0px !important;
+    width: 100px !important;
+    height: 100px !important;
+}

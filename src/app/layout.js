@@ -1,5 +1,7 @@
+// src/app/layout.js
 import { Inter } from "next/font/google";
 import "./globals.css";
+import RootLayoutClient from "./RootLayoutClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+      </head>
+      <body className={inter.className}>
+        <RootLayoutClient>{children}</RootLayoutClient>
+      </body>
     </html>
   );
 }
